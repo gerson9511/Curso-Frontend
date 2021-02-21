@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Frontend Page</title>
 </head>
     <style>
-        body {
-            margin: 0px; 
-            background-color: #08AEEA;background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 63%);
-            font-family: 'Muli', sans-serif;
+    body {
+        margin: 0px; 
+        background-color: #08AEEA;background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 63%);
+        font-family: 'Muli', sans-serif;
         }
     .header {
         background-color: #08AEEA;background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 63%);
@@ -64,28 +64,49 @@
 
     }.header__menu--profile p {
         margin: 0;
-        color: white;
-        
+        color: white;        
     }
-
+    .main {
+        height: 300px;
+        align-items: center;
+    }
+    .main__title {
+        color: white;
+        font-size: 25px;
+    }
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);/* 0.1 Opacity transparent*/
+        border: 2px solid white;
+        border-radius: 25px;
+        color:white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%;/*Relative Value*/
+        outline: none;
+    }
+    ::placeholder {
+        color: white;
+    }/*Pseudo-element*/
     </style>
     <body>   
         <header class="header">
-            <img class="header__img" src="./logo-platzi.png" alt="Logo">
+            <img class="header__img" src="Imagenes/logo-platzi.png" alt="Logo">
             <div class="header__menu">
                 <div class="header__menu--profile">
                     <img src="Imagenes/user.png" alt="user">
-                    <p>Perfil</p>
+                    <p>Profile</p>
                 </div>
                 <ul>
-                    <li><a href="/">Cuenta</a></li>
-                    <li><a href="/">Cerrar Sesion</a></li>                    
+                    <li><a href="/">Account</a></li>
+                    <li><a href="/">Sign out</a></li>                    
                 </ul>
             </div>
         </header>
-        <section>
-            <h2>¿Que quieres ver hoy?</h2>
-            <input type="text" placeholder="Buscar...">
+        <section class="main">
+            <h2 class="main__title">What do you want today?</h2>
+            <input class="input" type="text" placeholder="Search...">
         </section>
     </body>
 </html>
